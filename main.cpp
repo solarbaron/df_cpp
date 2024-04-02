@@ -8,7 +8,7 @@ int clear_term() {
     #else
         system("clear");
     #endif
-    return 0
+    return 0;
 }
 
 void character_creation() {
