@@ -22,9 +22,49 @@ void character_creation() {
     printBorder(name_tmp1);
 }
 
+class engine {
+public:
+    void run() {
+        while (!gameEnd) {
+            input();
+            gameUpdate();
+            render();
+        }
+    }
+private:
+    bool gameEnd = false;
+
+    void input() {
+        std::string command;
+        std::cout << ">";
+        std::getline(std::cin, command);
+
+        if (command == "look") {
+            std::cout << "you are blind" << std::endl;
+        } else if (command == "quit") {
+            exit();
+        } else {
+            std::cout << "unknown command";
+        }
+    }
+
+    void gameUpdate() {
+
+    }
+
+    void render() {
+
+    }
+
+    static void exit() {
+        ::exit(0);
+    }
+};
 
 int main() {
-    character_creation();
+    //character_creation();
+    engine engine;
+    engine.run();
     return 0;
 }
 
