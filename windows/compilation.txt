@@ -1,0 +1,1 @@
+sudo x86_64-w64-mingw32-g++ -static -o myapp.exe main.cpp -I/usr/include/xcurses -DPDC_WIDE pdcurses.dll
