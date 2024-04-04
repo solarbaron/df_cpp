@@ -9,6 +9,6 @@
 #include <string>
 #include <vector>
 #include <sstream>
-#include <ncurses.h>
+//#include <ncurses.h>
 
 #endif //DS1_FANCY_BORDER_H

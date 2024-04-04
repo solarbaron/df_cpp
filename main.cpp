@@ -7,8 +7,6 @@
 #include <ncurses.h>
 #endif
 
-
-
 #include "fancy_border.cpp"
 
 class staticBaseCommands {
@@ -101,7 +99,6 @@ private:
         else if (command == "quit") {
             exit();
         } else {
-            std::cout << command; //debug - remove
             std::cout << "unknown command" << std::endl;
         }
     }
