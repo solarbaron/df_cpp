@@ -1,8 +1,12 @@
 #include <iostream>
 #include <cstdlib>
-#include <unistd.h>
-#include <termios.h>
+
+#ifdef _WIN32
+#include <curses.h>
+#else
 #include <ncurses.h>
+#endif
+
 
 
 #include "fancy_border.cpp"

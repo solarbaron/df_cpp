@@ -5,7 +5,10 @@
 #ifndef DS1_FANCY_BORDER_H
 #define DS1_FANCY_BORDER_H
 
-#include <string>
 #include <iostream>
+#include <string>
+#include <vector>
+#include <sstream>
+#include <ncurses.h>
 
 #endif //DS1_FANCY_BORDER_H

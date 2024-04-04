@@ -4,13 +4,6 @@
 
 #include "fancy_border.h"
 
-#include <iostream>
-#include <string>
-#include <vector>
-#include <sstream>
-#include <ncurses.h>
-
-
 void printBorder(const std::string& text) {
     // UTF-8 characters for the border
     const char* topLeft = "\u250C"; // ┌
